@@ -112,4 +112,5 @@ def centroid_bound(X: npt.ArrayLike, gamma: float, lambd: float) -> float:
     
     return gamma*N**(-1/max(d,2))*(np.log(N))**(1/d_prime)+(1+lambd)*gamma**(-1/3)
 
-def trunc_bound()
+def trunc_bound(M, lambd, gamma, d, omega):
+    return 2*M*lambd*gamma**(d+1)*np.exp(-gamma*omega)
