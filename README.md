@@ -1,19 +1,5 @@
-# pycvxcluster
+# Properties of Weighted Sum-of-Norms Clustering on Small Datasets
 
-Ports implementations of convex clustering algorithms to Python and gives sklearn-like interface. Planned to include ADMM (Chi, Lange 2015), SSNAL (Sun, Toh, Yuan 2021).
+## Overview
 
-Installation: For now, download the folder, cd to the folder, run "pip install -e ."
-
-Dependencies: Numpy, Scipy, scikit-learn, sckikit-sparse
-
-IN DEVELOPMENT, future changes may cause backwards-compatability issues
-
-To do:
-* Documentation
-* Logging
-* Typing
-* Testing
-* Alternative to scikit-sparse methods
-* More algorithms
-* Code clean-up
-* Fix examples
+This repository contains the code and supplementary materials for the paper titled **"Properties of Weighted Sum-of-Norms Clustering on Small Datasets"**. The paper investigates the practical application of the weighted sum-of-norms clustering method under computational constraints and limited data. It provides guidelines for parameter selection, specifically focusing on the weight function parameter \(\gamma\) and the regularization parameter \(\lambda\), and compares the performance of this approach with the unweighted sum-of-norms method and the k-means method. The study highlights the robustness of the localized weighted sum-of-norms clustering algorithm under truncation and its superior performance in handling complex cluster structures and overlapping convex hulls. The base code for the sum-of-norms implementation is adapted from the [pycvxcluster](https://github.com/dx-li/pycvxcluster) repository. An introductory PowerPoint presentation is available in the `presentation` folder.
